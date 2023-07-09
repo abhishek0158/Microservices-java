@@ -1,22 +1,20 @@
 package com.lcwd.user.service.UserService.Entities;
 
+
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-
-
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class Rating {
-    private String ratingId;
-    private String userId;
-    private String hotelId;
-    private int rating;
+public class Hotel {
 
-    private String feedback;
+    private String id;
 
+    private String name;
 
-    private Hotel hotel;
+    private String location;
+    private String about;
+
 }
