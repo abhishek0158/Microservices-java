@@ -7,6 +7,8 @@ import lombok.NoArgsConstructor;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import javax.persistence.Transient;
+import java.util.List;
 
 
 @Entity
@@ -23,4 +25,7 @@ public class Hotel {
 
     private String location;
     private String about;
+
+    @Transient
+    List<Rating> ratingList;
 }
